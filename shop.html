@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAC Band Shop - Exklusive Fanartikel, Musik-Alben und Konzerttickets Erhalten</title>
+    <meta name="description" content="TBesuche den RAC Shop für exklusive Merchandising-Artikeln. Hol dir dein Lieblingsstück!.">
+    <meta name="keywords" content="RAC, Shop, Merchandise,Fanartikel, Einkauf">
+    <link rel="icon" type="image/x-icon" href="images/shoe.jpg">
+    <!--font-awesome cdn link, das is link zur bibliothek zur font icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--custom css link-->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="navigation.css">
+    
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    
+    <header>
+        <div id="brand"><a href="index.html">THE RAC</a></div>
+        <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="gallery.html" >Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li id="einkaufen"><a href="wagen.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+          </ul>
+        </nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="gallery.html" >Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="quiz.html">Quiz</a></li>
+              <li id="einkaufen"><a href="wagen.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+          </ul>
+        </div>
+      </header>
+  
+      <!-- END! HEADER -->
+      <!---Iamges from https://www.photoleapapp.com-->
+      <section class="shop" id="shop">
+
+        <h1 class="heading"> Shop</h1>
+    
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/shirt.jpg" alt="T-Shirt">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/4848BL9UQNXES" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('T-Shirt', '99.99', 'images/shirt.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Premium Paket</h3>
+                    <h5>€99,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/shirt2.jpg" alt="T-Shirt">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/QSVQA4A8WYCJ4" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('T-Shirt', '19.99', 'images/shirt2.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Weißes T-Shirt</h3>
+                    <h5>€19,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/shoe.jpg" alt="Schuh">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/F6WC26KX4DU9Q" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Schuh', '29.99', 'images/shoe.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Schuhe</h3>
+                    <h5>€29,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/piano.jpg" alt="Klavier">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/23XSBUUZC64LA" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Klavier', '199.99', 'images/piano.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Klavier</h3>
+                    <h5>€199,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/lenses.jpg" alt="Brile">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/BCFRZWBXRRQYL" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Linsen', '9.99', 'images/lenses.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Brille</h3>
+                    <h5>€9,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/cup.jpg" alt="Becher">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/VPYLCGQ94ALZA" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Becher', '19.99', 'images/cup.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Becher</h3>
+                    <h5>€19,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/cup2.jpg" alt="Becher2">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/VPYLCGQ94ALZA" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Becher', '19.99', 'images/cup2.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Becher</h3>
+                    <h5>€19,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/cap.jpg" alt="Kappe">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/4TD3WLYJU4BWN" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Kappe', '14.99', 'images/cap.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Kappe</h3>
+                    <h5>€14,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/cap2.jpg" alt="Kappe2">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/4TD3WLYJU4BWN" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Kappe', '14.99', 'images/cap2.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Kappe</h3>
+                    <h5>€14,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/bag.jpg" alt="Tasche">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/7WZDVZLCVY4MC" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Tasche', '34.99', 'images/bag.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tasche</h3>
+                    <h5>€34,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/keys.jpg" alt="Schlüssel">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/895KR6WYE39P8" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Schlüssel', '24.99', 'images/keys.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Schlüssel</h3>
+                    <h5>€24,99</h5>
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="image">
+                    <img src="images/tickets.jpg" alt="Tickets">
+                    <div class="share">
+                        <a href="https://www.paypal.com/ncp/payment/6LXGYQWC796NA" class="fa-solid fa-money-check-dollar" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-heart" onclick="toggleLike(this)"></a>
+                        <a href="#" class="fas fa-shopping-cart" onclick="addToCart('Tickets', '49.99', 'images/tickets.jpg')"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Tickets</h3>
+                    <h5>$49,99</h5>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+     <!-- Footer -->
+     <footer>
+        <section class="footer">
+            <h2>Folgen Sie uns</h2>
+            <div class="share">
+                <a href="https://www.instagram.com/redwan_rb_/" target="_blank" class="fab fa-instagram">Redwan Berhawu</a>
+                <a href="https://www.instagram.com/alaayounis2/" target="_blank" class="fab fa-instagram">Ala Younis</a>
+                <a href="https://www.instagram.com/chin_christian_m/" target="_blank" class="fab fa-instagram">Chris Chin</a>
+            </div>
+            <div class="credit">  <span> The Afrieast</span> |Alle Rechte Vorbehalten|</div>
+        </section>
+    </footer>
+
+
+    <!--ENDE Footer-->
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--magnific popup js cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="scripts/script2.js"></script>
+    <script src="scripts/script.js"></script> 
+    <script src="scripts/shop.js"></script>  
+    <script src="scripts/wagen.js"></script>  
+    </body>
+    </html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RAC Musik-Quiz - Teste Dein Wissen Über Unsere Band und die Geschichte der Rockmusik</title>
+        <meta name="description" content="Teste dein Wissen über RAC und die Geschichte der Rockmusik mit unserem spannenden Quiz. Bist du ein echter Fan?">
+        <meta name="keywords" content="RAC, Quiz, Rockmusik, Wissenstest, Bandgeschichte">
+        <link rel="icon" type="image/x-icon" href="images/shoe.jpg">
+        <!--font-awesome cdn link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <!--custom css link-->
+        <link rel="stylesheet" href="navigation.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/08626bgbba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <!-- HEADER -->
+        <header>
+            <div id="brand"><a href="index.html">THE RAC</a></div>
+            <nav>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="gallery.html" >Gallery</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+              </ul>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+              <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="gallery.html" >Gallery</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="quiz.html">Quiz</a></li>
+              </ul>
+            </div>
+          </header>
+    
+        <div class="quiz-container">
+            <h1>RAC Band Quiz</h1>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. In welchem Jahr wurde RAC gegründet?</p>
+                    <input type="radio" id="q1a" name="q1" value="1980">
+                    <label for="q1a">1980</label><br>
+                    <input type="radio" id="q1b" name="q1" value="1983">
+                    <label for="q1b">1983</label><br>
+                    <input type="radio" id="q1c" name="q1" value="1986">
+                    <label for="q1c">1986</label><br>
+                </div>
+                <div class="question">
+                    <p>2. Wie heißt das Debütalbum von RAC?</p>
+                    <input type="radio" id="q2a" name="q2" value="Open Up and Say... Ahh!">
+                    <label for="q2a">Open Up and Say... Ahh!</label><br>
+                    <input type="radio" id="q2b" name="q2" value="Flesh & Blood">
+                    <label for="q2b">Flesh & Blood</label><br>
+                    <input type="radio" id="q2c" name="q2" value="Look What the Cat Dragged In">
+                    <label for="q2c">Look What the Cat Dragged In</label><br>
+                </div>
+                <div class="question">
+                    <p>3. Wer ist der Leadsänger von RAC?</p>
+                    <input type="radio" id="q3a" name="q3" value="Bret Michaels">
+                    <label for="q3a">Bret Michaels</label><br>
+                    <input type="radio" id="q3b" name="q3" value="C.C. DeVille">
+                    <label for="q3b">C.C. DeVille</label><br>
+                    <input type="radio" id="q3c" name="q3" value="Rikki Rockett">
+                    <label for="q3c">Rikki Rockett</label><br>
+                </div>
+                <div class="question">
+                    <p>4. Welches Genre wird hauptsächlich mit RAC verbunden?</p>
+                    <input type="radio" id="q4a" name="q4" value="Heavy Metal">
+                    <label for="q4a">Heavy Metal</label><br>
+                    <input type="radio" id="q4b" name="q4" value="Glam Metal">
+                    <label for="q4b">Glam Metal</label><br>
+                    <input type="radio" id="q4c" name="q4" value="Punk Rock">
+                    <label for="q4c">Punk Rock</label><br>
+                </div>
+                <div class="question">
+                    <p>5. Welcher Song ist ein Hit von RAC?</p>
+                    <input type="radio" id="q5a" name="q5" value="Sweet Child O' Mine">
+                    <label for="q5a">Sweet Child O' Mine</label><br>
+                    <input type="radio" id="q5b" name="q5" value="Every Rose Has Its Thorn">
+                    <label for="q5b">Every Rose Has Its Thorn</label><br>
+                    <input type="radio" id="q5c" name="q5" value="Livin' on a Prayer">
+                    <label for="q5c">Livin' on a Prayer</label><br>
+                </div>
+                <div class="question">
+                    <p>6. Welche Stadt ist die Heimatstadt von RAC?</p>
+                    <input type="radio" id="q6a" name="q6" value="Los Angeles">
+                    <label for="q6a">Los Angeles</label><br>
+                    <input type="radio" id="q6b" name="q6" value="New York">
+                    <label for="q6b">New York</label><br>
+                    <input type="radio" id="q6c" name="q6" value="Mechanicsburg">
+                    <label for="q6c">Mechanicsburg</label><br>
+                </div>
+                <div class="question">
+                    <p>7. Wer ist der Gitarrist von RAC?</p>
+                    <input type="radio" id="q7a" name="q7" value="Slash">
+                    <label for="q7a">Slash</label><br>
+                    <input type="radio" id="q7b" name="q7" value="C.C. DeVille">
+                    <label for="q7b">C.C. DeVille</label><br>
+                    <input type="radio" id="q7c" name="q7" value="Kirk Hammett">
+                    <label for="q7c">Kirk Hammett</label><br>
+                </div>
+                <div class="question">
+                    <p>8. Welches Album von RAC wurde 1990 veröffentlicht?</p>
+                    <input type="radio" id="q8a" name="q8" value="Look What the Cat Dragged In">
+                    <label for="q8a">Look What the Cat Dragged In</label><br>
+                    <input type="radio" id="q8b" name="q8" value="Open Up and Say... Ahh!">
+                    <label for="q8b">Open Up and Say... Ahh!</label><br>
+                    <input type="radio" id="q8c" name="q8" value="Flesh & Blood">
+                    <label for="q8c">Flesh & Blood</label><br>
+                </div>
+                <div class="question">
+                    <p>9. Welches Mitglied von RAC spielt Schlagzeug?</p>
+                    <input type="radio" id="q9a" name="q9" value="Rikki Rockett">
+                    <label for="q9a">Rikki Rockett</label><br>
+                    <input type="radio" id="q9b" name="q9" value="Bobby Dall">
+                    <label for="q9b">Bobby Dall</label><br>
+                    <input type="radio" id="q9c" name="q9" value="Tommy Lee">
+                    <label for="q9c">Tommy Lee</label><br>
+                </div>
+                <div class="question">
+                    <p>10. Wann wurde das Album "Open Up and Say... Ahh!" veröffentlicht?</p>
+                    <input type="radio" id="q10a" name="q10" value="1986">
+                    <label for="q10a">1986</label><br>
+                    <input type="radio" id="q10b" name="q10" value="1988">
+                    <label for="q10b">1988</label><br>
+                    <input type="radio" id="q10c" name="q10" value="1990">
+                    <label for="q10c">1990</label><br>
+                </div>
+                <button type="button">Absenden</button>
+            </form>
+            <div id="quiz-result" class="quiz-result"></div>
+        </div>
+
+     <!-- Footer -->
+     <footer>
+        <section class="footer">
+            <h2>Folgen Sie uns</h2>
+            <div class="share">
+                <a href="https://www.instagram.com/redwan_rb_/" target="_blank" class="fab fa-instagram">Redwan Berhawu</a>
+                <a href="https://www.instagram.com/alaayounis2/" target="_blank" class="fab fa-instagram">Ala Younis</a>
+                <a href="https://www.instagram.com/chin_christian_m/" target="_blank" class="fab fa-instagram">Chris Chin</a>
+            </div>
+            <div class="credit">  <span> The Afrieast</span> |Alle Rechte Vorbehalten|</div>
+        </section>
+    </footer>
+    
+        <!--ENDE Footer-->
+        <!--jquery cdn link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!--magnific popup js cdn link -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+        <script src="scripts/script2.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/quiz.js"></script> 
+    </body>
+    </html>
